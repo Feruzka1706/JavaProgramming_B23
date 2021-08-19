@@ -1,6 +1,4 @@
-package ArrayList;
-
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+package day35_ArrayList;
 
 import java.util.ArrayList;
 

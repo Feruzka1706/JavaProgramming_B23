@@ -52,8 +52,8 @@ public class DogPark {
         System.out.println("------------------------------------------------------------------------------");
 
         Dog[] dogs = {dog1,dog2,dog3};
-
         ArrayList<Dog> dogsList=new ArrayList<>();
         dogsList.addAll ( Arrays.asList(dogs) );
+        //System.out.println(dogsList);
     }
 }

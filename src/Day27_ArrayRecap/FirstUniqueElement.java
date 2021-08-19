@@ -2,15 +2,14 @@ package Day27_ArrayRecap;
 
 public class FirstUniqueElement {
     public static void main(String[] args) {
-        int[] nums={1,1,2,3,3,4}; //2
-        int firstUniqueElement=0;
+        int[] nums = {1, 1, 2, 3, 3, 4}; //2
+        int firstUniqueElement = 0;
 
-        /*
 
-        for (int j = 0; j < nums.length ; j++) {
+        for (int j = 0; j < nums.length; j++) {
             //this outer loop responsible for repeating the inner loop, to find frequency of every single element
 
-         */
+
 
           /*
             for (int i = 0; i < nums.length; i++) {
@@ -30,23 +29,24 @@ public class FirstUniqueElement {
            */
 
 
-        for(int each:nums){
+            for (int each : nums) {
 
-            int frequency=0;//to store frequency of each element
-            for(int element:nums){
-                if(element==each){
-                    frequency++;
+                int frequency = 0;//to store frequency of each element
+                for (int element : nums) {
+                    if (element == each) {
+                        frequency++;
+                    }
+                }
+
+                if (frequency == 1) {
+                    firstUniqueElement = each;
+                    break;
                 }
             }
+            System.out.println(firstUniqueElement);
 
-            if(frequency==1){
-                firstUniqueElement=each;
-                break;
-            }
+
         }
-        System.out.println(firstUniqueElement);
-
-
     }
 }
 /*
